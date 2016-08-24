@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Albertauto</string>
+    <string-array name="AC">
+        <item>COOL</item>
+        <item>HEAT</item>
+        <item>AUTO</item>
+    </string-array>
+</resources>

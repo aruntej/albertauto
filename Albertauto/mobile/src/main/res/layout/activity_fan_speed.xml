@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.einsteinauto.albertalpha.albertauto.FanSpeed">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan Speed Control"
+        android:id="@+id/textView"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed +"
+        android:id="@+id/buttonup"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="39dp"
+        android:onClick="onClickIncreaseFanSpeed"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed -"
+        android:id="@+id/buttondown"
+        android:layout_below="@+id/buttonup"
+        android:layout_marginTop="39dp"
+        android:onClick="onClickDecreaseFanSpeed"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AirCon"
+        android:layout_below="@+id/FanAction"
+        android:entries="@array/AC"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/FanAction"
+        android:layout_below="@+id/buttondown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+</RelativeLayout>
